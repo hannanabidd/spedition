@@ -1,0 +1,49 @@
+{
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "orders": "My orders",
+    "templates": "Order templates",
+    "directory": "Directory",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "dashboard": "Dashboard",
+    "entryBtn": "New Entry",
+    "templates": "Order templates",
+    "directory": "Directory",
+    "settings": "Settings"
+  },
+  "directory": {
+    "directory": "Directory",
+    "entryBtn": "New Entry",
+    "templates": "Order templates"
+  },
+  "templates": {
+    "templates": "Order templates",
+    "templatesBtn": "New Template"
+  },
+  "settings": {
+    "settings": "Account Settings",
+    "details": "User details",
+    "save": "Save",
+    "company": "Company",
+    "companyType": "Company type",
+    "no": "No Company",
+    "sole": "Sole proprietorship / freelancer",
+    "type": "Company (GmbH, AG, UG, SE, KG, KGaA ...)",
+    "salutation": "salutaTion",
+    "woman": "woman",
+    "mister": "mister",
+    "miscellaneous": "miscellaneous",
+    "firstName": "First name*",
+    "surname": "Sur name*",
+    "addressOne": "Street and House number",
+    "addressTwo": "Address supplement",
+    "postCode": "Postcode*",
+    "location": "Location*",
+    "country": "Country",
+    "phone": "Phone number*",
+    "sales": "Sales or tax ID*",
+    "email": "Email address"
+  }
+}

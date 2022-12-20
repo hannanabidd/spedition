@@ -1,0 +1,30 @@
+#pagination {
+  padding-top: 5px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+#pagination li {
+  display: inline;
+}
+#pagination li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #000;
+}
+
+/* Active and Hoverable Pagination */
+#pagination li a {
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+#pagination li a.active {
+  background-color: #0aa1dd;
+  color: #fff;
+}
+#pagination li a:hover:not(.active) {
+  background-color: #ddd;
+}

@@ -1,0 +1,727 @@
+.MainPage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashBoardMainPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.borderDash hr {
+  height: 2px;
+  width: 100%;
+  background-color: #f5f5fa;
+  border: none;
+  margin-top: 30px;
+}
+.borderDash {
+  width: 97%;
+  margin-left: 30px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  flex-direction: column;
+}
+.dashBoardMainPage h1 {
+  font-size: 28px;
+  /* margin-top: 34px;
+  width: 20%; */
+  margin-left: 13px;
+  font-family: "Poppins Bold";
+}
+.hmburger {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 37px;
+  height: 35px;
+}
+.sideBar {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: white;
+
+  width: 18%;
+  /* background-color: var(--primaryColor); */
+  /* height: auto; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  left: 0;
+}
+.sidebar-book {
+  border-radius: 5px;
+  border: 2px solid var(--primaryColor);
+  padding: 10px 25px;
+  color: var(--primaryColor);
+  font-weight: 600;
+}
+.sidebar-book:hover {
+  border-radius: 5px;
+  background: var(--primaryColor);
+  border: 2px solid var(--primaryColor);
+  padding: 10px 25px;
+  color: #fff;
+  font-weight: 600;
+}
+.sideBar > img {
+  margin-top: 10px;
+  /* margin-right: 85px; */
+}
+.sideBarItems {
+  margin-top: 30px;
+  width: 95%;
+  margin-left: 25px;
+}
+.sideBarItems li {
+  width: 95%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  padding-left: 12px;
+  /* padding-top: 10px; */
+
+  position: relative;
+  margin-top: 10px;
+}
+.sideBarItems li:hover {
+  cursor: pointer;
+}
+
+.sideBarItemsCon img {
+  margin-right: 12px;
+  height: 20px;
+  width: 20px;
+  margin-left: 14px;
+}
+.sideBarItemsCon svg {
+  margin-right: 12px;
+  height: 20px;
+  margin-left: 14px;
+}
+.sideBarItems li p {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+.arrow {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  margin-left: 14px;
+}
+.arrowRotate {
+  rotate: 180deg;
+}
+.sideBarItems a {
+  text-decoration: none;
+  position: relative;
+  color: black;
+}
+.sideBarItems a .onlyBorderLeft {
+  display: none;
+  position: absolute;
+  height: 40px;
+  left: -19px;
+  border: 2px solid var(--primaryColor);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-top: 11px;
+  background-color: var(--primaryColor);
+}
+.sideBarItems a .onlyBorderLeftSet {
+  display: none;
+  position: absolute;
+  height: 38px;
+  top: 10px;
+  left: -19px;
+  border: 2px solid var(--primaryColor);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+
+  background-color: var(--primaryColor);
+}
+.sideBarItems a .onlyBorderSubMenu {
+  display: none;
+  position: absolute;
+  height: 33px;
+  top: 6px;
+  left: -27px;
+  border: 2px solid var(--primaryColor);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+
+  background-color: var(--primaryColor);
+}
+
+.sideBarItemsCon {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+.topSearchBarIcons img {
+  margin-right: 30px;
+}
+
+.topsearchBar {
+  width: 98%;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.topSearchBarIcons {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+.mainModal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBarInput {
+  width: 60%;
+  height: 50px;
+  position: relative;
+}
+.searchBarInput > img {
+  position: absolute;
+  left: 40px;
+  top: 16px;
+}
+.searchBarInput input {
+  width: 80%;
+  height: 100%;
+  border-radius: 7px;
+  padding: 9px;
+  padding-left: 45px !important;
+  margin-left: 30px;
+  border: 1px solid #bdbdbd;
+}
+.searchBarInput input:focus {
+  outline: none;
+}
+.RoutesMain {
+  width: 80%;
+  margin-left: 250px;
+}
+.dashboardHeading {
+  width: 100%;
+  margin-left: 30px;
+  font-size: 42px;
+  font-family: "Poppins Bold";
+  color: rgb(47, 45, 45);
+  margin-top: 10px;
+}
+.graphsInfoCard {
+  margin-left: 13px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  width: 276px;
+  height: 80px;
+  border: 1px solid rgba(74, 71, 163, 0.1);
+  border-radius: 7px;
+}
+.graphName {
+  display: flex;
+  width: 70%;
+  margin-left: 10px;
+  align-items: center;
+}
+.graphsInfoCard > img {
+  width: 20%;
+}
+.graphDetails {
+  margin-left: 10px;
+}
+.graphDetails p {
+  color: #333333;
+  font-size: 12px;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.graphDetails h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.cardsCon {
+  display: flex;
+  margin-top: 20px;
+}
+.dashBoardFIlters {
+  width: 70%;
+  margin-left: 13px;
+  margin-top: 25px;
+}
+.dashBoardFIlters h4 {
+  font-size: 12px;
+  font-weight: 400;
+}
+.allFilters {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btnFilter {
+  margin-right: 10px;
+
+  background: none !important;
+  border: 1px solid rgba(74, 71, 163, 0.1);
+  color: #bdbdbd !important;
+  width: 105px;
+  font-size: 12px;
+  font-weight: 400;
+  height: 39px;
+  border-radius: 39px;
+}
+.resetAll img {
+  margin-right: 5px;
+}
+.resetAll button {
+  font-family: "Poppins" !important;
+  border: none;
+  color: red;
+  /* margin-left: 20px; */
+  background: none !important;
+}
+.allFilters p {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.activeFilter {
+  background: var(--primaryColor) !important;
+  color: white !important;
+  font-size: 12px;
+  font-weight: 700;
+}
+.optionsFilters {
+  -webkit-appearance: none;
+  background-image: url("../../../public/images/downArrowBlue.svg");
+  background-repeat: no-repeat;
+  font-size: 13px;
+  line-height: none;
+  background-position: right 10px top 10px;
+  width: 198px;
+  height: 35px;
+  border-radius: 7px;
+  border: 1px solid rgba(74, 71, 163, 0.1);
+  background-color: white;
+  padding: 9px;
+}
+.head {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: bold;
+}
+.upcomingAppointments {
+  position: relative;
+  margin-left: 13px;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 7px;
+  height: 470px;
+  overflow-y: auto;
+  width: 48.7%;
+  border: 1px solid rgba(74, 71, 163, 0.1);
+}
+.headingAppointment {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 3px;
+
+  width: 100%;
+}
+.headingAppointment h4 {
+  font-family: "Poppins";
+  width: 50%;
+  font-size: 18px;
+  font-weight: 600;
+}
+.headingAppointment img {
+  width: 20px;
+  height: 22px;
+}
+.appointDetail {
+  width: 100%;
+}
+.appointsDetailsHeadingDash {
+  width: 100%;
+  background-color: #f5f5fa;
+  height: 58px;
+  align-items: center;
+  border-radius: 7px;
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-around;
+}
+.appointsDetailsHeadingDash h4 {
+  width: 24%;
+  font-size: 12px;
+
+  font-weight: 700;
+}
+.appointsDetailsHeading h4 {
+  width: 25%;
+  font-weight: 400;
+
+  font-size: 12px;
+}
+.detailsOfAppoint {
+  width: 100%;
+
+  height: 38px;
+  align-items: center;
+  border-radius: 7px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.detailsOfAppoint p {
+  width: 25%;
+  font-size: 12px;
+  font-weight: 400;
+}
+.appointments {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.btnSeeMore {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  z-index: 1000;
+  justify-content: center;
+  border-top: 1px solid rgba(74, 71, 163, 0.1);
+  bottom: 0;
+  height: 50px;
+  align-items: center;
+  cursor: pointer;
+  right: 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primaryColor);
+}
+.btnSeeMore img {
+  margin-left: 5px;
+  color: var(--primaryColor);
+}
+.circleImg {
+  width: 40px;
+  height: 41px;
+  background-color: #f5f5fa;
+  /* opacity: 0.1; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showLi {
+  display: flex !important;
+}
+.extraItems {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  margin-top: -5px;
+
+  width: 100%;
+  margin-left: 8px;
+
+  z-index: 100000;
+}
+.addUtils {
+  position: absolute !important ;
+  width: 30px !important;
+  /* background-color: #BDBDBD; */
+  color: #bdbdbd;
+  font-size: 12px;
+  font-weight: 700;
+
+  left: 10px;
+  top: -25px;
+  padding: 0 !important;
+}
+.extraItems li {
+  height: 32px;
+  width: 94%;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 48px;
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+.logoutBtn {
+  width: 100%;
+  /* height: 70px; */
+  margin-bottom: 50px;
+
+  /* position: absolute;
+  bottom: 30px;
+  left: -30px; */
+}
+.logoutBtn button {
+  background: none;
+  border: none;
+  color: red;
+}
+.logoutBtn > div {
+  margin-top: 30px;
+  /* margin-right: 60px;
+   */
+  margin-left: 44px;
+  display: flex;
+  align-items: center;
+}
+.logoutBtn > div img {
+  margin-right: 14px;
+  cursor: pointer;
+}
+.logoutBtn > div img g {
+  fill: white;
+}
+.showOnResponsive {
+  width: 54px;
+  display: none;
+  background-color: white;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  position: fixed;
+  left: 0;
+}
+.logOutSvg:hover {
+  background-color: white !important;
+}
+
+.showOnResponsive ul {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  height: auto;
+  flex-direction: column;
+  margin-top: 17px;
+}
+
+.showOnResponsive ul li {
+  display: flex;
+  cursor: pointer;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 30px;
+  list-style: none;
+}
+.showOnResponsive ul li:hover {
+  color: white;
+  background-color: var(--primaryColor);
+}
+.showOnResponsive > svg {
+  margin-top: 30px;
+  height: 27px;
+  padding-right: 15px;
+}
+.showOnResponsive a {
+  color: black;
+}
+.iconPatientItems {
+  display: flex;
+
+  flex-direction: column;
+  background-color: rgba(187, 181, 181, 0.4);
+
+  width: 150px;
+}
+.iconPatientItems > li {
+  display: block !important;
+
+  padding-left: 20px;
+  z-index: 1000;
+  height: 30px !important;
+}
+@media screen and (max-width: 1400px) {
+  .filterAppointment .filtersBtns .centerBtnFilter button {
+    margin-right: 2px !important;
+  }
+}
+@media screen and (max-width: 1267px) {
+  .sideBar {
+    display: flex;
+    transform: translateX(-300px);
+    transition: 0.5s;
+    height: 104vh;
+  }
+  .dashBoardMainPage h1 {
+    margin-left: 30px;
+  }
+  .graphsInfoCard {
+    margin-left: 30px;
+  }
+  .dashBoardFIlters {
+    margin-left: 30px;
+  }
+  .upcomingAppointments {
+    margin-left: 30px;
+  }
+  .AllPateintMain {
+    margin-left: 30px !important;
+  }
+  .appointHeading {
+    margin-left: 30px !important;
+  }
+  .allAppointsMain {
+    margin-left: 30px !important;
+  }
+  .AppointTypeMain {
+    margin-left: 30px !important;
+  }
+  .reportHeadingMain {
+    margin-left: 30px !important;
+  }
+  .flagAnalysisMain {
+    margin-left: 30px !important;
+  }
+  .sideBar > img {
+    margin-right: 77px;
+  }
+  .showOnResponsive {
+    display: flex;
+    z-index: 1000;
+  }
+  .RoutesMain {
+    width: 87%;
+    margin-left: 30px;
+  }
+  .dashBoardFIlters {
+    width: 90%;
+  }
+  .dashBoardFIlters h4 {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .filterAppointment .filtersBtns .centerBtnFilter button {
+    margin-right: 2px !important;
+  }
+  .showSideBar {
+    display: flex !important;
+    width: 250px;
+    transform: translateX(0px) !important;
+    transition: 0.5s;
+  }
+  .hmburger {
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  .appointSpecialty {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .RoutesMain {
+    margin-left: 8px;
+  }
+  .topsearchBar {
+    width: 81%;
+  }
+  .searchBarInput {
+    width: 70%;
+  }
+  .cardsCon {
+    flex-direction: column;
+  }
+  .allFilters {
+    flex-wrap: wrap;
+  }
+  .upcomingAppointments {
+    width: 89% !important;
+  }
+  .detailsOfAppoint p {
+    font-size: 10px;
+    width: 27%;
+  }
+  .appointsDetailsHeadingDash h4 {
+    font-size: 12px;
+  }
+  .graphsInfoCard {
+    width: 279px !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .topsearchBar {
+    width: 75% !important;
+  }
+  .topsearchBar input {
+    width: 95%;
+  }
+  .allFilters {
+    width: 100%;
+  }
+  .btnFilter {
+    width: 45%;
+    margin-top: 6px;
+  }
+  .allFilters p {
+    margin-left: 23px;
+    margin-top: 6px;
+  }
+  .optionsFilters {
+    margin-top: 6px;
+  }
+  .resetall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 100px;
+
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 912px) {
+  .upcomingAppointments {
+    width: 65%;
+  }
+
+  .resetAll {
+    width: 56px;
+  }
+  .cardsCon {
+    flex-wrap: wrap;
+  }
+  .graphsInfoCard {
+    width: 375px;
+  }
+}
