@@ -1,0 +1,496 @@
+.headerMain {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  .buttons {
+    margin-top: 15px;
+  }
+  .signupBtn {
+    padding: 12px 32px;
+    background: var(--primaryColor);
+    border-radius: 5px;
+    margin-left: 30px;
+    color: #fff;
+  }
+  @media (max-width: 600px) {
+    .headerMain {
+      flex-direction: column;
+    }
+  }
+}
+.hero-section {
+  background-image: url("../../assets/heroBg.png") !important;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 79px;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+  }
+  p {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  .location {
+    width: 768px;
+    height: 100px;
+    background: #ffffff;
+    box-shadow: 10px 2px 40px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .points {
+    display: flex;
+    width: 968px;
+    margin-top: 50px;
+    justify-content: space-between;
+  }
+  h6 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-left: 3px;
+  }
+  @media (max-width: 600px) {
+    padding: 20px;
+    .location {
+      width: 100%;
+    }
+    .points {
+      width: 100%;
+      flex-direction: column;
+    }
+    h1 {
+      line-height: 50px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+    p {
+      justify-content: flex-start;
+    }
+  }
+}
+.online-transport {
+  background-image: url("../../assets/secondBg.png");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  padding: 90px 120px;
+  // padding-left: 120px;
+  .online-bg {
+  }
+  .text {
+    p {
+      font-family: "La Belle Aurore";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 26px;
+      letter-spacing: -0.02em;
+      color: #00bb98;
+      margin-top: 10px;
+    }
+    h1 {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 54px;
+      letter-spacing: -0.5px;
+      color: #111b19;
+      margin-top: 15px;
+    }
+    h6 {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #444444;
+      margin-top: 10px;
+    }
+  }
+  .cards {
+    .card-one {
+      background-image: url("../../assets/head-foot.png") !important;
+      background-position: 100%;
+      // background-repeat: no-repeat;
+      // background-size: contain, cover;
+      height: 491px;
+      width: 326px;
+      box-shadow: 10px 10px 12px 0px #00000040;
+      background: #fff;
+      border-top-left-radius: 35px;
+      border-top-right-radius: 35px;
+      display: flex;
+      flex-direction: column;
+      // justify-content: center;
+      padding: 0px 20px;
+      h3 {
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 26px;
+        letter-spacing: 3px;
+        font-feature-settings: "pnum" on, "lnum" on;
+        color: #fffdfd;
+        margin-top: 22px;
+      }
+      h1 {
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+        color: #000000;
+      }
+      .line {
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        font-feature-settings: "pnum" on, "lnum" on, "ordn" on;
+        color: #444444;
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    flex-direction: row;
+    padding: 10px 10px;
+    .text {
+      margin-top: 50px;
+    }
+    .card-one {
+      margin-bottom: 30px;
+      border-top-left-radius: 35px;
+      border-top-right-radius: 0px;
+    }
+  }
+}
+.serviceBg {
+  background-image: url("../../assets/thirdBg.png");
+  margin-top: 50px;
+  padding: 70px;
+  .heading {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 54px;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+  }
+  .cards {
+    margin-top: 50px;
+    .service-card {
+      height: 350px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      align-items: flex-end;
+    }
+    p {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-transform: capitalize;
+      color: #fff;
+    }
+    .one {
+      background-image: url("../../assets/transport.png");
+    }
+    .two {
+      background-image: url("../../assets/motor.png");
+    }
+    .three {
+      background-image: url("../../assets/mobel.png");
+    }
+    .four {
+      background-image: url("../../assets/sperr.png");
+    }
+    .five {
+      background-image: url("../../assets/palette.png");
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 10px;
+    .service-card {
+      margin-top: 20px;
+    }
+  }
+}
+.steps-section {
+  background-image: url("../../assets/fourthBg.png");
+  padding: 90px;
+  .steps-box {
+    background: #f2fbfa;
+    padding: 40px;
+    h5 {
+      font-family: "La Belle Aurore";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #00bb98;
+    }
+    h1 {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 54px;
+      text-align: center;
+      letter-spacing: -0.5px;
+      text-transform: capitalize;
+      color: #111b19;
+    }
+    p {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #444444;
+    }
+    .list {
+      width: 100%;
+      .list-card {
+        // width: 32.5%;
+        background-color: #fff;
+        height: 390px;
+        h2 {
+          font-family: "Barlow";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 26px;
+          color: #111b19;
+          text-align: center;
+        }
+        p {
+          font-family: "Barlow";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 26px;
+          text-align: center;
+          color: #444444;
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    padding: 10px;
+    .service-card {
+      margin-top: 20px;
+    }
+    .steps-box {
+      padding: 10px;
+    }
+    .list .list-card {
+      width: 100%;
+    }
+    h1 {
+      line-height: 40px !important;
+    }
+  }
+}
+.country-section {
+  background-image: url("../../assets/fifthBg.png");
+  padding: 120px;
+  .country-box {
+    padding: 30px;
+    h1 {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 54px;
+      color: #ffffff;
+    }
+    p {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #999999;
+    }
+    .country-card {
+      height: 250px;
+      padding-left: 20px;
+      border-radius: 5px;
+      display: flex;
+      align-items: flex-end;
+      // width: 100%;
+    }
+    .country-one {
+      background-image: url("../../assets/turkey.png");
+      background-repeat: no-repeat;
+    }
+    .country-two {
+      background-image: url("../../assets/deutschland.png");
+      background-repeat: no-repeat;
+    }
+    .country-three {
+      background-image: url("../../assets/france.png");
+      background-repeat: no-repeat;
+    }
+    .country-four {
+      background-image: url("../../assets/Italy.png");
+      background-repeat: no-repeat;
+    }
+    .country-five {
+      background-image: url("../../assets/grobritan.png");
+      background-repeat: no-repeat;
+    }
+    .country-six {
+      background-image: url("../../assets/spain.png");
+      background-repeat: no-repeat;
+    }
+    .country-p {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 54px;
+      color: #ffffff;
+    }
+  }
+  @media (max-width: 600px) {
+    padding: 10px;
+    .service-card {
+      margin-top: 20px;
+    }
+  }
+}
+.testimonial-section {
+  background-image: url("../../assets/sixBg.png");
+  padding: 100px;
+  h1 {
+    font-family: "La Belle Aurore";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #00bb98;
+  }
+  p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #111b19;
+  }
+  .testimonial-card {
+    height: 210px;
+    background-color: #fff;
+    box-shadow: 0px 0px 67px rgba(0, 0, 0, 0.03),
+      0px 0px 39.2384px rgba(0, 0, 0, 0.0227778),
+      0px 0px 21.3407px rgba(0, 0, 0, 0.0182222),
+      0px 0px 10.8875px rgba(0, 0, 0, 0.015),
+      0px 0px 5.45926px rgba(0, 0, 0, 0.0117778),
+      0px 0px 2.63657px rgba(0, 0, 0, 0.00722222);
+    border-radius: 10px;
+    padding: 20px;
+    .review {
+      font-family: "barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #111b19;
+      text-align: left !important;
+    }
+    .review-name {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000b33;
+    }
+    .review-prof {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: #444444;
+    }
+  }
+  @media (max-width: 600px) {
+    padding: 10px;
+    .testimonial-card {
+      margin-top: 20px;
+      height: auto;
+      width: 100%;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+}
+.footer-section {
+  background-color: #f2fbfa;
+  padding: 0px 120px;
+  p {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #111b19;
+  }
+  .footer-bar {
+    background: #1a1a3d;
+    padding: 20px;
+  }
+
+  h3 {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #f5f5f5;
+  }
+  @media (max-width: 600px) {
+    padding: 10px;
+  }
+}

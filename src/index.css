@@ -12,8 +12,8 @@ h4,
 h5,
 h6,
 p {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
   font-family: "Poppins", sans-serif !important;
 }
 
@@ -59,6 +59,13 @@ body {
 * select:focus {
   border: 1px solid var(--primaryColor) !important;
 }
+.Btn {
+  padding: 12px 22px;
+  background: var(--primaryColor);
+  border-radius: 5px;
+  color: #fff;
+}
+
 .dashBoardMainPage h1 {
   font-size: 18px;
   color: #a8a69d;
@@ -259,7 +266,7 @@ body {
 
 @media screen and (max-width: 420px) {
   * h1 {
-    font-size: 29px !important;
+    font-size: 24px !important;
   }
   * label {
     font-size: 12px !important;

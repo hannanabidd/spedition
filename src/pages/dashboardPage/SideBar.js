@@ -39,26 +39,11 @@ const SideBar = () => {
     setShowReportItem(false);
     setShowUtilityItem(false);
   };
-  const showNavBarHam = () => {
-    setShowSideBar(!showSideBar);
-  };
-  const showReports = () => {
-    setShowReportItem(!showReportsItem);
-    setShowUtilityItem(false);
-    setShowItems(false);
-  };
+
   const showResponsivenavBar = () => {
     setTranslateNav(!translateNav);
   };
-  const showUtility = () => {
-    setShowUtilityItem(!showUtilityItem);
-    setShowItems(false);
-    setShowReportItem(false);
-  };
-  const showPateintItems = () => {
-    setTranslateNav(true);
-    setShowItems(true);
-  };
+
   const onlyForRendering = () => {
     setRendering(!rendering);
   };
