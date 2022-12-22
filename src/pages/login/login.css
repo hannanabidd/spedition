@@ -1,8 +1,12 @@
 .loginPage {
   width: 100%;
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
+}
+.para {
+  text-align: center;
+  margin-top: 10px !important;
 }
 .loginWelcome {
   width: 50%;
@@ -11,6 +15,12 @@
   justify-content: space-around;
   flex-direction: column;
   background-color: #a8c1f5;
+}
+.back-color {
+  background-color: #a8c1f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .loginFirstWelcome {
   width: 48%;
@@ -27,9 +37,15 @@
   color: white;
   font-family: "Poppins" !important;
 }
+.login-heading {
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+}
 .loginFirstWelcome img {
   margin-right: 21px;
 }
+
 .loginForm {
   width: 50%;
   border-color: red;
@@ -38,12 +54,11 @@
 .loginFormInputs h2 {
   text-align: center;
   font-size: 34px;
-  font-family: "Poppins Bold";
+  font-weight: bold;
 }
 .loginFormInputs {
-  margin-left: 154px;
   margin-top: 40px;
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,18 +91,44 @@
   border: 1px solid #bdbdbd;
   border-radius: 5px;
 }
-.loginFormInputs button {
+.loginFormInputs .login-btn {
   box-shadow: 0px 20px 40px rgba(74, 71, 163, 0.2);
-
-  margin-left: 35px;
-  margin-top: 120px;
-
+  margin-top: 50px;
   width: 216px;
   height: 50px;
   background-color: var(--primaryColor);
   color: white;
   border-radius: 5px;
   border: none;
+  font-size: 18px;
+  font-weight: normal;
+}
+.loginFormInputs .sender-btn {
+  /* margin-top: 50px; */
+  /* width: 216px; */
+  height: 50px;
+  background-color: #fff;
+  color: var(--primaryColor);
+  border-radius: 5px;
+  border: 1px solid var(--primaryColor);
+  font-size: 18px;
+  font-weight: normal;
+}
+.sender-btn:hover {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+.line {
+  border-top: 1px solid var(--primaryColor);
+  width: 100%;
+}
+.or {
+  margin-top: 10px;
+  border: 1px solid var(--primaryColor);
+  background-color: var(--primaryColor);
+  color: #fff;
+  padding: 7px;
+  border-radius: 50%;
 }
 .loginFormInputs * input:focus {
   outline: none;

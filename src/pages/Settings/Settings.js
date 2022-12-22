@@ -35,7 +35,6 @@ const Settings = () => {
                 </div>
                 <div className="col-lg-6 mb-[20px]">
                   <Select
-                    // defaultValue="lucy"
                     placeholder={t("settings.companyType")}
                     style={{
                       borderRadius: "5px",
