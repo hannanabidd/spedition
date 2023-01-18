@@ -25,52 +25,53 @@ const Login = () => {
 
   console.log(data);
   return (
-    <div className='loginPage'>
+    <div className="loginPage">
       {/* {isAuthenticated && <Navigate to={"/"} />} */}
-      <div className='loginWelcome'>
-        <div className='loginFirstWelcome flex items-center h-[100%]'>
-          <img src={Logo} alt='icon' />
+      <div className="loginWelcome">
+        <div className="loginFirstWelcome flex items-center h-[100%]">
+          <img src={Logo} alt="icon" />
           <h1>Welcome! Let’s get started where you left.</h1>
         </div>
-        <div className='loginSecondWelcome'></div>
+        <div className="loginSecondWelcome"></div>
       </div>
-      <div className='loginForm flex justify-center'>
-        <div className='logLogin'>
-          <img src={Logo} alt='icon' />
+      <div className="loginForm flex justify-center">
+        <div className="logLogin">
+          <img src={Logo} alt="icon" />
         </div>
         <form
           onChange={({ target: { id, value } }) => {
             console.log(id);
             setData({ ...data, [id]: value });
           }}
-          className='loginFormInputs'>
+          className="loginFormInputs"
+        >
           <h2>{t("signUp.sign")}</h2>
-          <p className='para'>
+          <p className="para">
             {t("signUp.already")}
-            <Link to='/login'>
-              <span className='ml-[5px] '>Login</span>
+            <Link to="/login">
+              <span className="ml-[5px] ">Login</span>
             </Link>
           </p>
-          <div className='radio-btn mt-[15px]'>
+          <div className="radio-btn mt-[15px]">
             <Radio.Group onChange={onChange} value={value}>
-              <Radio value='private' defaultChecked={true}>
+              <Radio value="private" defaultChecked={true}>
                 {t("signUp.private")}
               </Radio>
-              <Radio value='commercial'>{t("signUp.commercial")}</Radio>
+              <Radio value="commercial">{t("signUp.commercial")}</Radio>
             </Radio.Group>
           </div>
 
-          <div className='row w-full mt-[30px]'>
+          <div className="row w-full mt-[30px]">
             {value === "commercial" && (
               <div>
-                <div className='col-lg-12 mb-[20px]'>
+                <div className="col-lg-12 mb-[20px]">
                   <Input
                     placeholder={t("signUp.company")}
-                    className='h-[50px] success'
+                    className="h-[50px] success"
                     style={{ borderRadius: "5px" }}
                   />
                 </div>
-                <div className='col-lg-12 mb-[20px]'>
+                <div className="col-lg-12 mb-[20px]">
                   <Select
                     placeholder={t("signUp.type")}
                     style={{
@@ -78,7 +79,7 @@ const Login = () => {
                       height: "45px",
                       border: "none",
                     }}
-                    className='h-[50px] success w-full border-none'
+                    className="h-[50px] success w-full border-none"
                     onChange={handleChange}
                     options={[
                       {
@@ -92,16 +93,16 @@ const Login = () => {
                     ]}
                   />
                 </div>
-                <div className='col-lg-12 mb-[20px]'>
+                <div className="col-lg-12 mb-[20px]">
                   <Input
                     placeholder={t("signUp.tax")}
-                    className='h-[50px] success'
+                    className="h-[50px] success"
                     style={{ borderRadius: "5px" }}
                   />
                 </div>
               </div>
             )}
-            <div className='col-lg-4 mb-[20px]'>
+            <div className="col-lg-4 mb-[20px]">
               <Select
                 placeholder={t("signUp.salutation")}
                 style={{
@@ -109,7 +110,7 @@ const Login = () => {
                   height: "45px",
                   border: "none",
                 }}
-                className='h-[50px] success w-full border-none'
+                className="h-[50px] success w-full border-none"
                 onChange={handleChange}
                 options={[
                   {
@@ -127,49 +128,49 @@ const Login = () => {
                 ]}
               />
             </div>
-            <div className='col-lg-4 mb-[20px]'>
+            <div className="col-lg-4 mb-[20px]">
               <Input
                 placeholder={t("signUp.first")}
-                className='h-[50px] success'
+                className="h-[50px] success"
                 style={{ borderRadius: "5px" }}
               />
             </div>
-            <div className='col-lg-4 mb-[20px]'>
+            <div className="col-lg-4 mb-[20px]">
               <Input
                 placeholder={t("signUp.sur")}
-                className='h-[50px] success'
+                className="h-[50px] success"
                 style={{ borderRadius: "5px" }}
               />
             </div>
-            <div className='col-lg-8 mb-[20px]'>
+            <div className="col-lg-8 mb-[20px]">
               <Input
                 placeholder={t("signUp.address")}
-                className='h-[50px] success'
+                className="h-[50px] success"
                 style={{ borderRadius: "5px" }}
               />
             </div>
-            <div className='col-lg-4 mb-[20px]'>
+            <div className="col-lg-4 mb-[20px]">
               <Input
                 placeholder={t("signUp.supp")}
-                className='h-[50px] success'
+                className="h-[50px] success"
                 style={{ borderRadius: "5px" }}
               />
             </div>
-            <div className='col-lg-4 mb-[20px]'>
+            <div className="col-lg-4 mb-[20px]">
               <Input
                 placeholder={t("signUp.post_code")}
-                className='h-[50px] success'
+                className="h-[50px] success"
                 style={{ borderRadius: "5px" }}
               />
             </div>
-            <div className='col-lg-8 mb-[20px]'>
+            <div className="col-lg-8 mb-[20px]">
               <Input
                 placeholder={t("signUp.location")}
-                className='h-[50px] success'
+                className="h-[50px] success"
                 style={{ borderRadius: "5px" }}
               />
             </div>
-            <div className='col-lg-12 mb-[20px]'>
+            <div className="col-lg-12 mb-[20px]">
               <Select
                 placeholder={t("signUp.country")}
                 style={{
@@ -177,7 +178,7 @@ const Login = () => {
                   height: "45px",
                   border: "none",
                 }}
-                className='h-[50px] success w-full border-none'
+                className="h-[50px] success w-full border-none"
                 onChange={handleChange}
                 options={[
                   {
@@ -207,42 +208,42 @@ const Login = () => {
                 ]}
               />
             </div>
-            <div className='col-lg-12 mb-[20px]'>
+            <div className="col-lg-12 mb-[20px]">
               <Input
                 placeholder={t("signUp.number")}
-                className='h-[50px] success'
+                className="h-[50px] success"
                 style={{ borderRadius: "5px" }}
               />
             </div>
-            <div className='col-lg-12 mb-[20px]'>
+            <div className="col-lg-12 mb-[20px]">
               <Input
-                name='email'
+                name="email"
                 placeholder={t("signUp.email")}
-                className='h-[50px] success'
+                className="h-[50px] success"
                 style={{ borderRadius: "5px" }}
               />
             </div>
-            <div className='col-lg-6 mb-[20px]'>
+            <div className="col-lg-6 mb-[20px]">
               <Input
                 placeholder={t("signUp.password")}
-                className='h-[50px] success'
+                className="h-[50px] success"
                 style={{ borderRadius: "5px" }}
               />
             </div>
-            <div className='col-lg-6 mb-[20px]'>
+            <div className="col-lg-6 mb-[20px]">
               <Input
                 placeholder={t("signUp.passwordR")}
-                className='h-[50px] success'
+                className="h-[50px] success"
                 style={{ borderRadius: "5px" }}
               />
             </div>
           </div>
           <Link to={"/"}>
-            <button className='login-btn'>
-              {false ? <Circle height='0px' /> : "Sign Up"}
+            <button className="login-btn">
+              {false ? <Circle height="0px" /> : "Sign Up"}
             </button>
           </Link>
-          <div className='line mt-[30px] '></div>
+          <div className="line mt-[30px] "></div>
         </form>
       </div>
     </div>

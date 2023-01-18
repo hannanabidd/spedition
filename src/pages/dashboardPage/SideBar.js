@@ -79,8 +79,10 @@ const SideBar = () => {
         <img src={Logo} alt="icon" className="" width="200px" />
         <Icons.Ham className="hmburger" onClick={showResponsivenavBar} />
         <ul className="sideBarItems">
-          <button className="sidebar-book">Book Transportation</button>
-          <NavLink to={"/"}>
+          <NavLink to={"/booking/checkout"}>
+            <button className="sidebar-book">Book Transportation</button>
+          </NavLink>
+          <NavLink to={"/dashboard"}>
             <div className="onlyBorderLeft"></div>{" "}
             <li>
               <div className="sideBarItemsCon">
@@ -96,11 +98,6 @@ const SideBar = () => {
                 <Icons.Patient />
                 <p>{t("sidebar.orders")} </p>
               </div>
-              {/* <img
-              className={showItems ? "arrow arrowRotate " : "arrow"}
-              src="/images/downArrow.svg"
-              alt="arrow"
-            /> */}
             </li>
           </NavLink>
 

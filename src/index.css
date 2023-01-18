@@ -19,6 +19,8 @@ p {
 
 :root {
   --primaryColor: #1b5ada;
+  --greyColor: #a8a69d;
+  --backgroundColor: #daddf5;
 }
 @font-face {
   font-family: "Poppins";
@@ -83,6 +85,27 @@ body {
 .active .onlyBorderLeft {
   display: block !important;
 }
+.ant-select-show-search.ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  height: auto;
+  /* border-radius: 10px; */
+  min-height: 45px;
+}
+.ant-select-multiple .ant-select-selection-item-remove svg {
+  color: #ff0000 !important;
+}
+
+.ant-select-multiple .ant-select-selection-item-content {
+  margin-right: 10px;
+}
+.ant-select-multiple .ant-select-selection-item {
+  height: 30px;
+  line-height: 28px;
+  border: none;
+  background: rgba(0, 47, 167, 0.05);
+  color: #002fa7;
+  border-radius: 5px;
+}
 .iconActive {
   background-color: var(--primaryColor);
   color: white;
@@ -142,6 +165,24 @@ body {
   box-shadow: none !important;
   outline: none !important;
   border: none;
+}
+.ant-modal-footer {
+  display: none;
+}
+.ant-modal-content {
+  margin-top: -25px;
+}
+.ant-modal-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+.table > :not(caption) > * > * {
+  border-bottom: none !important;
+}
+.ant-checkbox-group-item {
+  margin-right: 0px;
+  margin-bottom: 8px;
 }
 .ant-select-focused:not(.ant-select-disabled).ant-select:not(
     .ant-select-customize-input

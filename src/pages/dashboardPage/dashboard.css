@@ -53,7 +53,7 @@
   flex-direction: column;
   position: fixed;
   top: 0;
-  z-index: 10000;
+  z-index: 300;
   left: 0;
 }
 .sidebar-book {
@@ -69,6 +69,13 @@
   border: 2px solid var(--primaryColor);
   padding: 10px 25px;
   color: #fff;
+  font-weight: 600;
+}
+.btn-reset {
+  border-radius: 5px;
+  border: 2px solid rgb(155, 148, 148);
+  padding: 10px 25px;
+  color: lightgray;
   font-weight: 600;
 }
 .sideBar > img {

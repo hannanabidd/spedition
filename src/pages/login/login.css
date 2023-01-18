@@ -184,9 +184,9 @@
   .loginFormInputs {
     margin-top: 130px !important;
   }
-  .loginFormInputs {
+  /* .loginFormInputs {
     margin-left: 52px !important;
-  }
+  } */
   .loginFormInputs {
     width: 80%;
   }
@@ -198,9 +198,9 @@
   .loginForm {
     width: 100%;
   }
-  .loginFormInputs {
+  /* .loginFormInputs {
     margin-left: 70px;
-  }
+  } */
   .loginFormInputs h2 {
     font-size: 19px;
   }

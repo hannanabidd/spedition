@@ -3,6 +3,7 @@ import "./DashboardMain.css";
 import { Table, Space } from "antd";
 import LastOrderTable from "../../components/Dashboard/LastOrderTable";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 const DashboardPage = () => {
   const { t } = useTranslation();
@@ -16,9 +17,6 @@ const DashboardPage = () => {
               {t("dashboard.dashboard")}{" "}
             </h1>
           </div>
-          {/* <div className="col-lg-6 flex justify-end">
-            <button className="sidebar-book">{t("directory.entryBtn")}</button>
-          </div> */}
         </div>
         <div className="borderDash"></div>
         <div className="row">
@@ -34,7 +32,9 @@ const DashboardPage = () => {
                 Compare shipping companies and prices and commission exactly the
                 right shipping company for your transport.
               </p>
-              <button className="btn-book">Book transport now</button>
+              <NavLink to={"/booking/checkout"}>
+                <button className="btn-book">Book transport now</button>
+              </NavLink>
             </div>
           </div>
         </div>

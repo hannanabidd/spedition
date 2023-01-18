@@ -10,7 +10,7 @@ const OnlineTransport = () => {
           <img src={Car} alt="car" />
           <p>Mach's Digital</p>
           <h1>Ihr online Transportportal</h1>
-          <h6 className="pr-[70px]">
+          <h6 className="md:pr-[70px]">
             Speditioncheck ist Ihr unabhängiges Vergleichs- und Buchungsportal.
             Erhalten Sie als Privat- oder Gewerbekunde innerhalb weniger
             Sekunden online Transportangebote von zuverlässigen
